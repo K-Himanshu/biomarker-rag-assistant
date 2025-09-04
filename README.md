@@ -137,8 +137,4 @@ Answer:
 ⚠️ This project is for educational/research purposes only.
 It is not a clinical tool and should not be used for medical decision-making.
 
-```
 
----
-
-```
