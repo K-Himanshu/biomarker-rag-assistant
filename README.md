@@ -1,6 +1,6 @@
 ```markdown
 # 🔬 Biomarker RAG Assistant
-*A Retrieval-Augmented Generation (RAG) project for querying biomedical PDFs (Module 1 – Agentic AI Developer Certification)*
+*A Retrieval-Augmented Generation (RAG) project for querying biomedical PDFs*
 
 ---
 
