@@ -38,6 +38,8 @@ This submission satisfies **Module 1** requirements:
 ## 📂 Project Structure
 ```
 
+## 📂 Project Structure
+```text
 biomarker-rag-assistant/
 │── data/                        # Sample PDFs (do not commit large PDFs to GitHub)
 │   └── sample.pdf
@@ -54,10 +56,8 @@ biomarker-rag-assistant/
 │
 │── requirements.txt             # Python dependencies
 │── README.md                    # Project description & usage
-│── .gitignore                   # Ignore venv, cache, and large files
-
-
-````
+│── .gitignore                   # Ignore venv, cache, large files
+```
 
 ---
 
