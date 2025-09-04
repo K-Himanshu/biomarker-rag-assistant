@@ -1,6 +1,6 @@
 ```markdown
 # 🔬 Biomarker RAG Assistant
-*A Retrieval-Augmented Generation (RAG) project for querying biomedical PDFs*
+***A Retrieval-Augmented Generation (RAG) project for querying biomedical PDFs***
 
 ---
 
