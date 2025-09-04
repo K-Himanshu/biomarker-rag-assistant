@@ -1,4 +1,8 @@
-```markdown
+Perfect 👍 I’ll polish the Markdown with **visual emphasis only** (no new text, just formatting tweaks like bold+italic, blockquotes, and emoji markers).
+
+Here’s your reformatted **README.md**:
+
+````markdown
 # 🔬 Biomarker RAG Assistant
 ***A Retrieval-Augmented Generation (RAG) project for querying biomedical PDFs***
 
@@ -8,35 +12,32 @@
 This project demonstrates a **retrieval-based assistant** that helps researchers query biomedical PDFs, with a focus on **biomarker–cancer relationships**.  
 It implements a simple **RAG pipeline** combining a **vector database (FAISS)** with open-source **sentence-transformer embeddings** to retrieve relevant scientific passages.  
 
-This submission satisfies **Module 1** requirements:
-- End-to-end AI pipeline
-- Open-source only (no paid APIs)
-- One clear biomedical use case
-- Reproducible instructions
+> ✅ This submission satisfies ***Module 1 requirements***:
+> - 🚀 **End-to-end AI pipeline**
+> - 🛠️ **Open-source only** (no paid APIs)
+> - 🎯 **One clear biomedical use case**
+> - 📑 **Reproducible instructions**
 
 ---
 
 ## 🎯 Objectives
-- ✅ Build a working **PDF → FAISS → Retrieval** pipeline  
+- ✅ Build a working ***PDF → FAISS → Retrieval*** pipeline  
 - ✅ Support **natural language queries** on biomarker-related literature  
 - ✅ Showcase an **open-source reproducible project** for ReadyTensor certification  
 
 ---
 
 ## 🏗️ Architecture
-**Pipeline Components:**
-1. **PDF Loader** – Extracts text (`PyPDFLoader`).
-2. **Chunking** – Splits into ~1000-character chunks (`RecursiveCharacterTextSplitter`).
-3. **Embeddings** – Uses `sentence-transformers/all-MiniLM-L6-v2` (fast + free).
-4. **Vector DB** – FAISS for similarity search.
-5. **Retriever** – Returns most relevant chunks for user queries.
+**🔎 Pipeline Components:**
+1. 📄 **PDF Loader** – Extracts text (`PyPDFLoader`).
+2. ✂️ **Chunking** – Splits into ~1000-character chunks (`RecursiveCharacterTextSplitter`).
+3. 🔤 **Embeddings** – Uses `sentence-transformers/all-MiniLM-L6-v2` (fast + free).
+4. 🗄️ **Vector DB** – FAISS for similarity search.
+5. 🎯 **Retriever** – Returns most relevant chunks for user queries.
 
-(*Optional extension*: Add an LLM like `flan-t5-base` to synthesize answers from retrieved chunks.)
+(*💡 Optional extension*: Add an LLM like `flan-t5-base` to synthesize answers from retrieved chunks.)
 
 ---
-
-## 📂 Project Structure
-```
 
 ## 📂 Project Structure
 ```text
@@ -57,18 +58,20 @@ biomarker-rag-assistant/
 │── requirements.txt             # Python dependencies
 │── README.md                    # Project description & usage
 │── .gitignore                   # Ignore venv, cache, large files
-```
+````
 
 ---
 
 ## ⚙️ Installation
-1. Clone this repo:
+
+1. 📥 Clone this repo:
+
 ```bash
 git clone https://github.com/<your-username>/biomarker-rag-assistant.git
 cd biomarker-rag-assistant
-````
+```
 
-2. Create and activate virtual environment:
+2. 🐍 Create and activate virtual environment:
 
 ```bash
 python -m venv venv
@@ -76,7 +79,7 @@ venv\Scripts\activate      # Windows
 source venv/bin/activate   # Linux/Mac
 ```
 
-3. Install dependencies:
+3. 📦 Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -97,7 +100,7 @@ python src/rag_pipeline.py
 
 ```
 Question: What biomarkers are discussed?
-Answer: 
+Answer:
 [retrieved chunks displayed...]
 ```
 
@@ -116,52 +119,29 @@ Answer:
 
 ## ✅ Module 1 Submission Checklist
 
-* [x] Working AI pipeline (PDF → FAISS → Retrieval)
-* [x] Open-source only (no paid APIs)
-* [x] GitHub repo with README + requirements.txt
-* [x] Clear usage instructions
-* [x] One biomedical use case
+* [x] **Working AI pipeline** (PDF → FAISS → Retrieval)
+* [x] **Open-source only** (no paid APIs)
+* [x] **GitHub repo with README + requirements.txt**
+* [x] **Clear usage instructions**
+* [x] **One biomedical use case**
 
 ---
 
 ## 👥 Contributors
 
-* Himanshu Kumar ([K-Himanshu](https://github.com/K-Himanshu))
-* Harsitha N. ([@collaborator-github](https://github.com/harsitha457))
+* 👨‍💻 Himanshu Kumar ([K-Himanshu](https://github.com/K-Himanshu))
+* 👩‍💻 Harsitha N. ([@collaborator-github](https://github.com/harsitha457))
 
 ---
 
 ## 📌 Notes
 
-⚠️ This project is **for educational/research purposes only**. It is **not a clinical tool** and should not be used for medical decision-making.
+⚠️ This project is ***for educational/research purposes only***.
+It is **not a clinical tool** and should not be used for medical decision-making.
 
 ```
 
 ---
 
-# 🛠 Repo Hygiene
-Before you push to GitHub:
-1. Add `.gitignore`:
+Do you also want me to **style the checklist and architecture section with GitHub callouts** (like `> [!NOTE]`, `> [!IMPORTANT]`) so it looks like Notion-style blocks?
 ```
-
-venv/
-**pycache**/
-*.pyc
-data/*.pdf
-
-````
-(so your virtualenv and PDFs aren’t uploaded)
-
-2. Check that `requirements.txt` is **lean** (only necessary packages: `langchain`, `faiss-cpu`, `sentence-transformers`, `pypdf`).
-
-3. Push to GitHub with a **clean commit history**:
-```bash
-git init
-git add .
-git commit -m "Initial commit: Biomarker RAG Assistant (Module 1)"
-git branch -M main
-git remote add origin https://github.com/<your-username>/biomarker-rag-assistant.git
-git push -u origin main
-````
-
----
