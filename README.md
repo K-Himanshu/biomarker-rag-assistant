@@ -39,22 +39,23 @@ This submission satisfies **Module 1** requirements:
 ```
 
 biomarker-rag-assistant/
-│── data/                        # Store PDFs (keep small, no large files)
+│── data/                        # Sample PDFs (do not commit large PDFs to GitHub)
 │   └── sample.pdf
 │
-│── notebooks/                   # Colab/Jupyter experiments
-│   └── rag\_experiments.ipynb
+│── notebooks/                   # Jupyter/Colab experiments
+│   └── rag_experiments.ipynb
 │
 │── src/                         # Core Python source code
-│   ├── **init**.py
+│   ├── __init__.py
 │   ├── loader.py                # PDF loading + text splitting
 │   ├── embedder.py              # Embeddings + FAISS vector store
-│   ├── rag\_pipeline.py          # Main pipeline entry point
+│   ├── rag_pipeline.py          # Main RAG pipeline (ask_question, etc.)
 │   └── utils.py                 # Helper functions
 │
 │── requirements.txt             # Python dependencies
-│── README.md                    # Project description + instructions
-│── .gitignore                   # Ignore venv, cache, large files
+│── README.md                    # Project description & usage
+│── .gitignore                   # Ignore venv, cache, and large files
+
 
 ````
 
